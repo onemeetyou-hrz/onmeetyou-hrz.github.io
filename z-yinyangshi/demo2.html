@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>index</title>
+    <link rel="stylesheet" href="css/common.css"/>
+    <link rel="stylesheet" href="css/index.css"/>
+    <script src="js/jquery-1.12.2.js"></script>
+
+    <style>
+
+        .yinyanshiText{
+            width: 50px;
+            height: 150px;
+            background-color: gold;
+            position: absolute;
+            display: none;
+            /*transition: all 1s;*/
+
+        }
+        /*.yinyanshiText:hover{*/
+            /*transform: scale(1.25);*/
+        /*}*/
+
+
+        .banner{
+            width: 750px;
+            height: 500px;
+            /*background-color: red;*/
+            display: none;
+            margin: 100px auto;
+        }
+        body{
+            height: 3000px;
+        }
+
+        .banner-item{
+            height: 345px;
+            width: 750px;
+            /*background-color: blue;*/
+            position: absolute;
+
+
+        }
+        .banner-item img{
+            position: absolute;
+
+        }
+        #bot-r{
+            right: 0;
+            top:80px;
+            opacity: 0;
+        }
+        #bot-l{
+            left: 0;
+            z-index: 1;
+            opacity: 0;
+        }
+        #top-l{
+            left: 0;
+            opacity: 0;
+
+        }
+        #top-r{
+            right: 0;
+            opacity: 0;
+            z-index: 1;
+        }
+
+    </style>
+
+</head>
+<body>
+
+
+    <div class="yinyanshiText">阴阳师</div>
+
+    <div class="banner">
+        <div class="banner-item" id="top">
+            <img id="top-l" src="images/role1_08df229.png" alt=""/>
+            <img id="top-r" src="images/role2_2b77a63.png" alt=""/>
+        </div>
+        <div class="banner-item" id="bot">
+            <img id="bot-l" src="images/role3_f2a6922.png" alt=""/>
+            <img id="bot-r" src="images/role4_01edf90.png" alt=""/>
+
+        </div>
+    </div>
+
+
+    <script>
+
+
+        $(function () {
+
+
+            $(".yinyanshiText").stop().show(1000);
+
+            $(window).scroll(function () {
+               if($(window).scrollTop()>200){
+                   $(".yinyanshiText").stop().hide(1000);
+               } else{
+                   $(".yinyanshiText").stop().show(1000);
+
+               }
+            });
+
+
+            play();
+            var flag = true;
+            $(".banner").on("click", function () {
+                if(flag){
+                    flag = false;
+
+                    play();
+                }
+            })
+
+
+            function play(){
+                $("#top").animate({
+                    "zIndex":10,
+                    "opacity":1
+                },1500).siblings().animate({
+                    "zIndex":0,
+                    "opacity":0
+                },1500);
+
+                $("#top img:first").animate({
+                    "left":100,
+                    "opacity":0
+                },1500, function () {
+                    $("#top img:first").animate({
+                        "left":0,
+                        "opacity":1
+                    })
+                });
+
+                $("#top img:last").animate({
+                    "right":100,
+                    "opacity":0
+
+                },1500, function () {
+                    $("#top img:last").animate({
+                        "right":0,
+                        "opacity":1
+                    })
+                });
+
+                $("#bot img:first").animate({
+                    "left":100,
+                    "opacity":0
+                },1000, function () {
+                    $("#bot img:first").animate({
+                        "left":0,
+
+                    })
+                });
+
+                $("#bot img:last").animate({
+                    "right":100,
+                    "opacity":0
+
+                },1000, function () {
+                    $("#bot img:last").animate({
+                        "right":0,
+
+                    })
+                });
+
+                setTimeout(function () {
+                    $("#top").attr("id","bot").siblings().attr("id","top");
+                    flag = true;
+                },1600)
+            };
+
+        })
+
+
+//        $(function () {
+//            $(window).scroll(function () {
+//
+//               if($(window).scrollTop()>200){
+//                   $(".banner").hide(1000)
+//               }
+//                else{
+//                   $(".banner").show(1000)
+//               }
+//            })
+//        })
+
+
+
+
+
+
+    </script>
+
+</body>
+</html>

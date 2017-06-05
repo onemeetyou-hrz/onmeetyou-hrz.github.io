@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title></title>
+    <script src="js/jquery-1.12.2.js"></script>
+
+    <style>
+        .one{
+            height: 200px;
+            width: 200px;
+            /*background-color: gold;*/
+            overflow: scroll;
+        }
+        .one li{
+            list-style: none;
+            height: 100px;
+            width: 100px;
+            border-radius: 50%;
+            /*background-color: red;*/
+        }
+        .box1{
+            margin-top: 100px;
+            transition: all 1s;
+            height: 50px;
+            width: 50px;
+            background-color: gold;
+            transform-style:preserve-3D;/*子元素为3d模式*/
+            /*transform-origin:100%;/!* 设置旋转的中心点*!/*/
+            /*transform-origin:top;/!* 设置旋转的中心点*!/*/
+
+            /*transform-origin: 0 0;*/
+            /*pointer-events: none;*/
+            transform-origin:bottom;
+            /*transform: rotateX(270deg);*/
+        }
+        .box1:hover{
+            /*transform: rotate(360deg);*/
+            /*transform: rotateX(360deg);*/
+            /*transform: rotateZ(360deg);*/
+            transform: rotateX(180deg);
+
+        }
+    </style>
+    
+</head>
+<body>
+
+        <div class="box1"></div>
+        <div class="box">
+            <div class="one">
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+            <div class="one">
+                <ul>
+                    <li></li>
+                    <li></li>
+                </ul>
+            </div>
+        </div>
+        <script>
+            
+            var lis=$(".box").find("li")
+            console.log(lis);
+            lis.each(function (index,ele) {
+                ele.style.background = "url(./images/20"+index+".png)"
+            })
+            
+        </script>
+
+</body>
+</html>

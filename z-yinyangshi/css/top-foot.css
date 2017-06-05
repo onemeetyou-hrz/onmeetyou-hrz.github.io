@@ -1,0 +1,117 @@
+/*顶部导航栏----开始*/
+/*左边盒子*/
+.top-big-box{
+    height: 55px;
+    width: 100%;
+    background-color: #fbfbfb;
+    /*border-top: 1px solid #b6b4b6;*/
+}
+.top-banxin{
+    width: 1010px;
+    margin: 0 auto;
+    height: 55px;
+    /*background-color: red;*/
+}
+.top-l-aOne{
+    margin-top: 3px;
+}
+/*右边盒子*/
+
+.top-ul li{
+    float: left;
+}
+.top-ul li a{
+    color: #99999c;
+    line-height: 55px;
+    text-align: center;
+    display:inline-block;
+    padding-left: 12px;
+    padding-right: 11px;
+    text-decoration: none;
+    height: 55px;
+}
+.top-ul li a:hover{
+    background-color: #f3f3f3;
+    color: #bd4c3a;
+    border-bottom: 3px solid #bc2e2e;
+}
+.top-ul-liFour{
+    margin-left: 23px;
+}
+.top-ul li .top-ul-li-aThree{
+    color: #bd4c3a;
+}
+/*顶部导航栏----结束*/
+
+/*底部导航栏---开始*/
+.bottom-big-box{
+    width: 100%;
+    height: 201px;
+    /*background-color: pink;*/
+    /*background-color: red;*/
+}
+.botom-content{
+    width: 842px;
+    /*background-color: blue;*/
+    margin: 0 auto;
+    height: 201px;
+}
+.share{
+    /*margin-top: 30px;*/
+    text-align: center;
+    padding-top: 25px;
+}
+.share i {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-image: url("../images/1.fw.png");
+    background-repeat: no-repeat;
+    vertical-align: middle;
+    margin: 0 3px;
+}
+.share .i-one{
+    background:url("../images/1.fw.png") no-repeat 0 -25px;
+}
+.share .i-two{
+    background:url("../images/1.fw.png") no-repeat 0 -50px;
+}
+.share .i-three{
+    background:url("../images/1.fw.png") no-repeat 0 -75px;
+}
+
+.image{
+    padding-top: 15px;
+    height: 56px;
+}
+.imageRight{
+    padding-right: 70px;
+}
+.leftBottom {
+    margin-top: 6px;
+}
+.leftTop a:hover{
+    text-decoration: underline;
+}
+.leftBottom .leftR{
+    display: inline-block;
+    width: 142px;
+    height: 25px;
+    line-height: 25px;
+    background-color: #610000;
+    text-align: right;
+}
+.leftR .leftRa{
+    color:#fff;
+}
+.leftRa:hover{
+    text-decoration: underline;
+}
+.p_wen p{
+    height: 20px;
+    line-height: 20px;
+}
+.p_wen .p_a{
+    color: #999999;
+}
+/*底部导航栏---结束*/

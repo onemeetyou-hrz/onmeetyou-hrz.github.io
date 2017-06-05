@@ -1,0 +1,83 @@
+/*
+* @Author: Administrator
+* @Date:   2017-04-10 21:49:35
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-04-13 18:35:28
+*/
+
+
+html,body,h1,h2,h3,p,div,ul,ol,li,img,form,input,button{
+    margin: 0; padding: 0;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+textarea{
+    resize: none;
+    /*·ÀÖ¹ÍÏ¶¯*/
+}
+img{
+    border: none;
+    /* ie6 Ä¬ÈÏÓÐ±ß¿ò */
+    vertical-align:middle;
+    /*È¥µôimgÏÂÄ¬ÈÏµÄ3ÏñËØ¿Õ°×*/
+}
+body{
+    font-size: 12px;
+    color:#434343;
+    font-family: "Î¢ÈíÑÅºÚ";
+}
+
+a{
+    text-decoration: none;
+    color: #434343;
+}
+a:hover{
+    color: #333;
+
+}
+
+li{
+    list-style: none;
+}
+
+.clearfix:after{
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix{
+    zoom: 1;
+}
+
+/*
+.clearfix:before,.clearfix:after{
+		content:"";
+		displar:table;
+}
+.clearfix:after{
+		clear:both;
+}
+.clearfix{
+		zoom:1;
+}
+*/
+.hide{
+    display: none;
+}
+table{
+    /*border-collapse: collapse;*/
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+

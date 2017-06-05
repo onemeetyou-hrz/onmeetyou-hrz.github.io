@@ -1,0 +1,260 @@
+/*
+* @Author: Administrator
+* @Date:   2017-04-10 21:49:35
+* @Last Modified by:   Administrator
+* @Last Modified time: 2017-04-13 18:35:28
+*/
+
+
+html,body,h1,h2,h3,p,div,ul,ol,li,img,form,input,button{
+    margin: 0; padding: 0;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+textarea{
+    resize: none;
+    /*防止拖动*/
+}
+img{
+    border: none;
+    /* ie6 默认有边框 */
+    vertical-align:middle;
+    /*去掉img下默认的3像素空白*/
+}
+body{
+    font-size: 12px;
+    color:#434343;
+    font-family: "微软雅黑";
+}
+
+a{
+    text-decoration: none;
+    color: #434343;
+}
+a:hover{
+    color: #333;
+
+}
+
+li{
+    list-style: none;
+}
+
+.clearfix:after{
+    content: "";
+    height: 0;
+    line-height: 0;
+    display: block;
+    visibility: hidden;
+    clear: both;
+}
+.clearfix{
+    zoom: 1;
+}
+
+/*
+.clearfix:before,.clearfix:after{
+		content:"";
+		displar:table;
+}
+.clearfix:after{
+		clear:both;
+}
+.clearfix{
+		zoom:1;
+}
+*/
+.hide{
+    display: none;
+}
+table{
+    /*border-collapse: collapse;*/
+}
+.fl{
+    float: left;
+}
+.fr{
+    float: right;
+}
+
+
+
+/*--同人专区---开始--*/
+.concent-tr{
+    height: 520px;
+    width: 1150px;
+    /*background-color: red;*/
+    margin: 0 auto;
+}
+/*--同人专区上盒子---开始--*/
+.concent-tr-top{
+    height: 110px;
+    width: 1220px;
+    /*background-color: blue;*/
+    margin-bottom: 30px;
+    /*position: relative;*/
+}
+/*同人专区图标*/
+.concent-tr-top .tr-top-left{
+    margin-top: 5px;
+    margin-right: 10px;
+}
+.concent-tr-top .tr-top-left a{
+    display: inline-block;
+    width: 110px;
+    height: 110px;
+    /*background-color: skyblue;*/
+    background: url("../images/index_z.png") -1133px -403px;
+}
+/*同人专区上盒子中间内容*/
+.tr-top-center{
+    height: 110px;
+    width: 930px;
+    /*background-color: red;*/
+}
+.tr-top-center ul{
+    margin-top: 20px;
+    margin-bottom: 16px;
+    border-bottom: 2px solid #000000;
+
+}
+.tr-top-center ul li {
+    float: left;
+    height: 77px;
+    width: 155px;
+    text-align: center;
+    padding-bottom: 15px;
+    /*overflow: hidden;*/
+}
+
+.tr-top-center ul li a{
+    height: 58px;
+    width: 155px;
+    display: block;
+    border-right: 1px dotted #000;
+    padding-top: 8px;
+    position: relative;
+
+}
+.tr-top-center ul a em{
+    display: block;
+    width: 72px;
+    height: 18px;
+    margin: 0 auto;
+    margin-top: 20px;
+    position: absolute;
+    left: 45px;
+    top: 0px;
+
+    /*height: 0;*/
+}
+
+.tr-top-center ul a i{
+    position: absolute;
+    height: 54px;
+    width: 100%;
+    display:none;
+    top: 41px;
+    top: 91px;
+    left: 0px;
+    bottom: -10px;
+    background: url("../images/icons_8a667d7.png");
+}
+.tr-top-center ul a .em-one{
+    background: url("../images/index_z_4b6df7a.png") -1441px -435px;
+}
+.tr-top-center ul a .em-two{
+    background: url("../images/index_z_4b6df7a.png") -1352px -452px;
+}
+.tr-top-center ul a .em-three{
+    background: url("../images/index_z_4b6df7a.png") -1392px -394px;
+}
+.tr-top-center ul a .em-four{
+    background: url("../images/index_z_4b6df7a.png") -1352px -416px;
+}
+.tr-top-center ul a .em-five{
+    background: url("../images/index_z_4b6df7a.png") -1424px -416px;
+}
+.tr-top-center ul a .em-six{
+    width: 89px;
+    height: 18px;
+    background: url("../images/index_z_4b6df7a.png") -1352px -434px;
+}
+.tr-top-center ul .border-none{
+    border-right: none;
+}
+/*----同人专区--前去投稿*/
+.tr-top-right{
+    margin-top: 60px;
+    position: absolute;
+    left: 1180px;
+}
+.tr-top-right a{
+    width: 101px;
+    height: 24px;
+    display: block;
+    background: url("../images/index_z.png") -1353px -346px;
+}
+/*--同人专区上盒子---结束--*/
+/*--同人专区下盒子---开始--*/
+.concent-tr-bottom{
+    height: 415px;
+    width: 1220px;
+    /*background-color: pink;*/
+}
+.concent-tr-bottom{
+    height: 415px;
+    width: 1220px;
+}
+.concent-tr-bottom ul{
+    height: 415px;
+    width: 1220px;
+
+}
+.concent-tr-bottom ul li{
+    float: left;
+    width: 285px;
+    height: 200px;
+    margin: 0 5px 5px;
+    position: relative;
+}
+.concent-tr-bottom ul li img{
+    width: 285px;
+    height: 163px;
+    margin-bottom: 5px;
+}
+.concent-tr-bottom ul li span{
+    font-size: 12px;
+}
+.concent-tr-bottom ul li .cover{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    display: none;
+    background-color: #999;
+    opacity: 0.5;
+
+}
+.concent-tr-bottom ul .cover em{
+    width: 79px;
+    height: 93px;
+    background: url("../images/index_z_4b6df7a.png") -562px -223px;
+    top: 50%;
+    left: 50%;
+    margin-top: -46px;
+    margin-left: -40px;
+    position: absolute;
+}
+.tr-bottom-pics2,.tr-bottom-pics3,.tr-bottom-pics4,.tr-bottom-pics5,.tr-bottom-pics6{
+    display: none;
+}
+
+/*--同人专区下盒子---结束--*/
+
+/*--同人专区---结束--*/
